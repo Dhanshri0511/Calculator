@@ -1,0 +1,226 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensures no content spills outside the container */
+        }
+
+        .email-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+
+            background-image: url('http://127.0.0.1:5500/src/assets/car1.jpg'); /* Replace with your local server URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: blur(2px); /* Adjust the blur value as needed */
+            z-index: -1; /* Position the pseudo-element behind the content */
+        }
+
+        .email-header {
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            height: 100px; 
+            margin: 0px 0px 15px 0px;
+        }
+
+        .email-header img {
+            width: 100px;
+            height: 60px;
+        }
+
+        .email-content {
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .email-content p {
+            margin: 0 0 15px;
+        }
+
+        .email-content a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .email-button {
+            display: block; 
+            width: 170px;
+            height: 20px;
+            margin: 20px 0;
+            padding: 10px 0;
+            background-color: #9bc3ed;
+            color: #000000;        
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .email-footer {
+            text-align: left;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .email-footer-section {
+            text-align: center;
+            color: #ffffff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <img src="https://via.placeholder.com/150" alt="CarTechIndia Logo"/>
+        </div>
+        <div class="email-content">
+            <p>Dear User,</p>
+            <p>Greetings from CarTechIndia,</p>
+            <p>Bidding for cars has started. Hurry up and start bidding before it ends.</p>
+            <p>Need Help? Ask at <a href="https://cartechindia.com">cartechindia.com</a></p>
+            <a href="https://cartechindia.com/start-bidding" class="email-button">Start Bidding Now</a>
+            <div class="email-footer">
+                <p>Regards,</p>
+                <p>© 2023 CarTechIndia, All rights reserved</p>
+            </div>
+        </div>
+        <div class="email-footer-section">
+            <p>You're receiving this email because you registered with CarTechIndia.</p>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .email-header {
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .email-header img {
+            width: 120px;
+            height: 70px;
+        }
+        .hero {
+            background-image: url('http://127.0.0.1:5500/src/assets/sample3.png'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            background-repeat: no-repeat;
+            
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.822);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .hero-content {
+            text-align: left;
+            position: relative;
+            z-index: 2;
+        }
+        .button {
+            background-color: #d29421;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .section {
+            padding: 40px 20px;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+        .section-dark {
+            background-color: #2a2205;
+            color: white;
+        }
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+        a {
+            color: rgb(48, 178, 229);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="hero">  
+        <div class="email-header">
+            <img src="http://127.0.0.1:5500/src/assets/cartechlogo.png" alt="CarTechIndia Logo"/>
+        </div>  
+    <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Dear User,</h2>
+            <p>Greetings from CarTechIndia,</p>
+            <p>Bidding for cars has started. Hurry up and start bidding before it ends.</p>
+            <p>Need Help? Ask at <a href="https://cartechindia.com">cartechindia.com</a></p>
+            <a href="#" class="button">Start Bidding Now</a>
+        </div>
+    </div>
+
+    <div class="section section-dark">
+        <h2>Welcome To CarTechIndia</h2>
+        <p>"Your perfect ride is just a click away.
+            Where quality and value meet the road."</p>
+    </div>
+
+   
+</div>
+
+</body>
+</html>
